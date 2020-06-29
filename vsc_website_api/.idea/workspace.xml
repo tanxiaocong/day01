@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="vsc_website.war" />
+      <artifact name="website:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="347daae6-c7bd-4f9b-a265-5767902c1a85" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/website" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\apache-maven-3.6.1\repository" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aWMnkq6VrwQ4RhkvLUfrIPR9Rp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="WebsiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="website" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vsc.website.WebsiteApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="website" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vsc.website.WebsiteApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/vsc_website/doc.html" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="vsc_website.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/vsc_website" />
+          </settings>
+        </artifact>
+        <artifact name="website:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/website_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_website" />
+        <option name="HTTP_PORT" value="80" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64732" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="website:war exploded" />
+          <artifact name="vsc_website.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.WebsiteApplication" />
+      <item itemvalue="Tomcat Server.tomcat" />
+    </list>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\Administrator\Desktop\sales\vsc_website_api" />
+          <option name="myCopyRoot" value="C:\Users\Administrator\Desktop\sales\vsc_website_api" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\Administrator\Desktop\sales\vsc_website_api" />
+          <option name="myCopyRoot" value="C:\Users\Administrator\Desktop\sales\vsc_website_api" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="347daae6-c7bd-4f9b-a265-5767902c1a85" name="Default Changelist" comment="" />
+      <created>1586847065384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586847065384</updated>
+      <workItem from="1586847069798" duration="23845000" />
+      <workItem from="1587007583068" duration="17011000" />
+      <workItem from="1587114454068" duration="306000" />
+      <workItem from="1587114776695" duration="598000" />
+      <workItem from="1587345604195" duration="136000" />
+      <workItem from="1587345766768" duration="219000" />
+      <workItem from="1587346002829" duration="212000" />
+      <workItem from="1587346232553" duration="57417000" />
+      <workItem from="1588728239795" duration="37388000" />
+      <workItem from="1589504533650" duration="1546000" />
+      <workItem from="1589506986247" duration="2366000" />
+      <workItem from="1589527455417" duration="14000" />
+      <workItem from="1589793376527" duration="40256000" />
+      <workItem from="1590473974794" duration="12480000" />
+      <workItem from="1591081872164" duration="2546000" />
+      <workItem from="1591240294693" duration="3209000" />
+      <workItem from="1591253154387" duration="27000" />
+      <workItem from="1591259051265" duration="28750000" />
+      <workItem from="1592787997119" duration="563000" />
+      <workItem from="1592788603733" duration="1415000" />
+      <workItem from="1592981468566" duration="1556000" />
+      <workItem from="1592987162339" duration="2553000" />
+      <workItem from="1593311430192" duration="3532000" />
+      <workItem from="1593395600182" duration="1514000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改BUG">
+      <created>1586933333236</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586933333236</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1586933495475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586933495475</updated>
+    </task>
+    <task id="LOCAL-00003" summary="去掉前台新闻列表分类">
+      <created>1587350421683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587350421683</updated>
+    </task>
+    <task id="LOCAL-00004" summary="参数校验">
+      <created>1587623515289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587623515289</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bug 修改">
+      <created>1589263831699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589263831699</updated>
+    </task>
+    <task id="LOCAL-00006" summary="禁止游览器缓存">
+      <created>1589267861216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589267861216</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加多语言支持">
+      <created>1590375045092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590375045092</updated>
+    </task>
+    <task id="LOCAL-00008" summary="BUG修改">
+      <created>1591335010925</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591335010925</updated>
+    </task>
+    <task id="LOCAL-00009" summary="BUG修改">
+      <created>1591341408590</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591341408590</updated>
+    </task>
+    <task id="LOCAL-00010" summary="简历接受邮箱修改">
+      <created>1592982317948</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592982317948</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改BUG" />
+    <MESSAGE value="去掉前台新闻列表分类" />
+    <MESSAGE value="参数校验" />
+    <MESSAGE value="bug 修改" />
+    <MESSAGE value="禁止游览器缓存" />
+    <MESSAGE value="添加多语言支持" />
+    <MESSAGE value="BUG修改" />
+    <MESSAGE value="简历接受邮箱修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="简历接受邮箱修改" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="676" y="305" key="#Custom_Plugin_Repositories" timestamp="1587114728137">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="676" y="305" key="#Custom_Plugin_Repositories/0.0.1600.860@0.0.1600.860" timestamp="1587114728137" />
+    <state x="682" y="292" key="#Notifications" timestamp="1587007403739">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="682" y="292" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1587007403739" />
+    <state x="321" y="5" key="#Project_Structure" timestamp="1586847597713">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="321" y="5" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1586847597713" />
+    <state x="632" y="339" key="#VCS_History_Cache_Settings" timestamp="1591335019223">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="632" y="339" key="#VCS_History_Cache_Settings/0.0.1600.860@0.0.1600.860" timestamp="1591335019223" />
+    <state x="359" y="92" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590980622722">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="359" y="92" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1590980622722" />
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1589939413686">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1589939413686" />
+    <state x="570" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586847164319">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="570" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1586847164319" />
+    <state x="563" y="297" width="474" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591348760876">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="563" y="297" width="474" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1591348760876" />
+    <state x="556" y="286" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587114549854">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="556" y="286" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860@0.0.1600.860" timestamp="1587114549854" />
+    <state x="378" y="16" width="825" height="827" key="CommitChangelistDialog2" timestamp="1592982316443">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="378" y="16" width="825" height="827" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1592982316443" />
+    <state x="621" y="185" key="FileChooserDialogImpl" timestamp="1587448357096">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="621" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1587448357096" />
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.2.center" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.2.left" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state width="1069" height="222" key="GridCell.Tab.2.right" timestamp="1592985632477">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1592985632477" />
+    <state x="318" y="9" key="SettingsEditor" timestamp="1593313764267">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="318" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1593313764267" />
+    <state width="232" height="66" key="changelist.details.popup" timestamp="1586933593487">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="232" height="66" key="changelist.details.popup/0.0.1600.860@0.0.1600.860" timestamp="1586933593487" />
+    <state x="92" y="92" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590045645171">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1590045645171" />
+    <state x="613" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592982259842">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="613" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1592982259842" />
+    <state x="502" y="162" width="685" height="536" key="find.popup" timestamp="1591240782566">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="502" y="162" width="685" height="536" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1591240782566" />
+    <state x="174" y="90" key="new project wizard" timestamp="1587364922060">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="174" y="90" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1587364922060" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1589953699011">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1589953699011" />
+    <state x="605" y="331" key="svn.upgradeDialog" timestamp="1587448363616">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="331" key="svn.upgradeDialog/0.0.1600.860@0.0.1600.860" timestamp="1587448363616" />
+    <state x="415" y="293" key="svn4idea.checkout.options" timestamp="1587448362036">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="415" y="293" key="svn4idea.checkout.options/0.0.1600.860@0.0.1600.860" timestamp="1587448362036" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="org.apache.catalina.connector.Request" fieldName="session" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="request.getSession().getAttribute(SK_CAPTCHA)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

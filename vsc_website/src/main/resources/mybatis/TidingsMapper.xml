@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vsc.website.dao.TidingsMapper">
+  <resultMap id="BaseResultMap" type="com.vsc.website.entity.Tidings">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="tidings_date" jdbcType="TIMESTAMP" property="tidingsDate" />
+    <result column="update_user" jdbcType="INTEGER" property="updateUser" />
+    <result column="update_at" jdbcType="TIMESTAMP" property="updateAt" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="create_at" jdbcType="TIMESTAMP" property="createAt" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, tidings_date, update_user, update_at, create_user, create_at, state
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tidings
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tidings
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.vsc.website.entity.Tidings" useGeneratedKeys="true" keyProperty="id">
+    insert into tidings (id, tidings_date, update_user, 
+      update_at, create_user, create_at, 
+      state)
+    values (#{id,jdbcType=INTEGER}, #{tidingsDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=INTEGER}, 
+      #{updateAt,jdbcType=TIMESTAMP}, #{createUser,jdbcType=INTEGER}, #{createAt,jdbcType=TIMESTAMP}, 
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vsc.website.entity.Tidings">
+    insert into tidings
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="tidingsDate != null">
+        tidings_date,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateAt != null">
+        update_at,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="createAt != null">
+        create_at,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="tidingsDate != null">
+        #{tidingsDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        #{updateAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createAt != null">
+        #{createAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vsc.website.entity.Tidings">
+    update tidings
+    <set>
+      <if test="tidingsDate != null">
+        tidings_date = #{tidingsDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        update_at = #{updateAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createAt != null">
+        create_at = #{createAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vsc.website.entity.Tidings">
+    update tidings
+    set tidings_date = #{tidingsDate,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=INTEGER},
+      update_at = #{updateAt,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=INTEGER},
+      create_at = #{createAt,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="list" resultType="com.vsc.website.vo.backend.BTidingsListVo">
+    select A.id,A.tidings_date,A.update_at,C.name as update_user,A.state,
+    (select title from tidings_names where tidings_id=A.id  order by case language when #{language,jdbcType=INTEGER} then 1 else 0 end desc limit 1) as title
+    from tidings A
+    inner join tidings_names B on A.id=B.tidings_id and B.language= #{language,jdbcType=INTEGER}
+    inner join user C on A.update_user=C.id
+    where 1=1
+    <if test="keywords!=null">
+      and (B.title like  CONCAT('%',#{keywords,jdbcType=VARCHAR},'%')
+      or B.content like  CONCAT('%',#{keywords,jdbcType=VARCHAR},'%'))
+    </if>
+    group by A.id,A.tidings_date,A.update_at,C.name,A.state
+    order by A.update_at desc
+  </select>
+  <select id="detail" resultType="com.vsc.website.vo.backend.BTidingsDetailVo">
+    select A.id,A.tidings_date,A.update_at,C.name as update_user,A.state
+    from tidings A
+    inner join user C on A.update_user=C.id
+    where A.id = #{id,jdbcType=INTEGER}
+  </select>
+</mapper>

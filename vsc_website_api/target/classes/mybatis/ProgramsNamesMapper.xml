@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vsc.website.dao.ProgramsNamesMapper">
+  <resultMap id="BaseResultMap" type="com.vsc.website.entity.ProgramsNames">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="program_id" jdbcType="INTEGER" property="programId" />
+    <result column="program_name" jdbcType="VARCHAR" property="programName" />
+    <result column="program_description" jdbcType="VARCHAR" property="programDescription" />
+    <result column="program_function" jdbcType="VARCHAR" property="programFunction" />
+    <result column="feature" jdbcType="VARCHAR" property="feature" />
+    <result column="similar_case" jdbcType="VARCHAR" property="similarCase" />
+    <result column="language" jdbcType="INTEGER" property="language" />
+    <result column="update_user" jdbcType="INTEGER" property="updateUser" />
+    <result column="update_at" jdbcType="TIMESTAMP" property="updateAt" />
+    <result column="create_user" jdbcType="INTEGER" property="createUser" />
+    <result column="create_at" jdbcType="TIMESTAMP" property="createAt" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, program_id, program_name, program_description, program_function, feature, similar_case, language,
+    update_user, update_at, create_user, create_at
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from programs_names
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from programs_names
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.vsc.website.entity.ProgramsNames">
+    insert into programs_names (id, program_id, program_name, 
+      program_description, program_function, feature,
+      similar_case, language,update_user, update_at,
+      create_user, create_at)
+    values (#{id,jdbcType=INTEGER}, #{programId,jdbcType=INTEGER}, #{programName,jdbcType=VARCHAR}, 
+      #{programDescription,jdbcType=VARCHAR}, #{programFunction,jdbcType=VARCHAR}, #{feature,jdbcType=VARCHAR},
+      #{similarCase,jdbcType=VARCHAR}, #{language,jdbcType=INTEGER},#{updateUser,jdbcType=INTEGER}, #{updateAt,jdbcType=TIMESTAMP},
+      #{createUser,jdbcType=INTEGER}, #{createAt,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vsc.website.entity.ProgramsNames">
+    insert into programs_names
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="programId != null">
+        program_id,
+      </if>
+      <if test="programName != null">
+        program_name,
+      </if>
+      <if test="programDescription != null">
+        program_description,
+      </if>
+      <if test="programFunction != null">
+        program_function,
+      </if>
+      <if test="feature != null">
+        feature,
+      </if>
+      <if test="similarCase != null">
+        similar_case,
+      </if>
+      <if test="language != null">
+        language,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateAt != null">
+        update_at,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="createAt != null">
+        create_at,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="programId != null">
+        #{programId,jdbcType=INTEGER},
+      </if>
+      <if test="programName != null">
+        #{programName,jdbcType=VARCHAR},
+      </if>
+      <if test="programDescription != null">
+        #{programDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="programFunction != null">
+        #{programFunction,jdbcType=VARCHAR},
+      </if>
+      <if test="feature != null">
+        #{feature,jdbcType=VARCHAR},
+      </if>
+      <if test="similarCase != null">
+        #{similarCase,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null">
+        #{language,jdbcType=INTEGER},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        #{updateAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createAt != null">
+        #{createAt,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vsc.website.entity.ProgramsNames">
+    update programs_names
+    <set>
+      <if test="programId != null">
+        program_id = #{programId,jdbcType=INTEGER},
+      </if>
+      <if test="programName != null">
+        program_name = #{programName,jdbcType=VARCHAR},
+      </if>
+      <if test="programDescription != null">
+        program_description = #{programDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="programFunction != null">
+        program_function = #{programFunction,jdbcType=VARCHAR},
+      </if>
+      <if test="feature != null">
+        feature = #{feature,jdbcType=VARCHAR},
+      </if>
+      <if test="similarCase != null">
+        similar_case = #{similarCase,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null">
+        language = #{language,jdbcType=INTEGER},
+      </if>
+       <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        update_at = #{updateAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createAt != null">
+        create_at = #{createAt,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vsc.website.entity.ProgramsNames">
+    update programs_names
+    set program_id = #{programId,jdbcType=INTEGER},
+      program_name = #{programName,jdbcType=VARCHAR},
+      program_description = #{programDescription,jdbcType=VARCHAR},
+      program_function = #{programFunction,jdbcType=VARCHAR},
+      feature = #{feature,jdbcType=VARCHAR},
+      similar_case = #{similarCase,jdbcType=VARCHAR},
+      language = #{language,jdbcType=INTEGER},
+      update_user = #{updateUser,jdbcType=INTEGER},
+      update_at = #{updateAt,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=INTEGER},
+      create_at = #{createAt,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <delete id="delete" parameterType="java.lang.Integer">
+    delete from programs_names where program_id = #{programId,jdbcType=INTEGER}
+  </delete>
+
+  <select id="getByProgramId" resultType="com.vsc.website.vo.backend.BProgramNamesVo">
+    select program_name,program_description,program_function,feature,similar_case,language
+    from programs_names
+    where program_id=#{programId,jdbcType=INTEGER}
+  </select>
+</mapper>

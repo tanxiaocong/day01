@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="vsc_website@192.168.40.68" uuid="053dd923-6b6d-4c22-b011-0a93c981b77f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.40.68:3306/vsc_website?characterEncoding=UTF-8&amp;useSSL=true&amp;verifyServerCertificate=false</jdbc-url>
+    </data-source>
+  </component>
+</project>

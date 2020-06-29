@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vsc.website.dao.TidingsNamesMapper">
+  <resultMap id="BaseResultMap" type="com.vsc.website.entity.TidingsNames">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="tidings_id" jdbcType="INTEGER" property="tidingsId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="language" jdbcType="INTEGER" property="language" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, tidings_id, title, content, language
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tidings_names
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tidings_names
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.vsc.website.entity.TidingsNames" useGeneratedKeys="true" keyProperty="id">
+    insert into tidings_names (id, tidings_id, title, 
+      content, language)
+    values (#{id,jdbcType=INTEGER}, #{tidingsId,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{language,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vsc.website.entity.TidingsNames">
+    insert into tidings_names
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="tidingsId != null">
+        tidings_id,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="language != null">
+        language,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="tidingsId != null">
+        #{tidingsId,jdbcType=INTEGER},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null">
+        #{language,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vsc.website.entity.TidingsNames">
+    update tidings_names
+    <set>
+      <if test="tidingsId != null">
+        tidings_id = #{tidingsId,jdbcType=INTEGER},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null">
+        language = #{language,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vsc.website.entity.TidingsNames">
+    update tidings_names
+    set tidings_id = #{tidingsId,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      language = #{language,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <delete id="deleteByTidingsId" parameterType="java.lang.Integer">
+    delete from tidings_names where  tidings_id = #{tidingsId,jdbcType=INTEGER}
+  </delete>
+
+  <select id="getTidingsNames" resultType="com.vsc.website.vo.backend.BTidingsNamesVo">
+    select title,content,language
+    from tidings_names
+    where  tidings_id = #{tidingsId,jdbcType=INTEGER}
+  </select>
+</mapper>
